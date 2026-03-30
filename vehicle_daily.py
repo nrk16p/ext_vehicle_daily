@@ -6,17 +6,7 @@ import certifi
 from pymongo import MongoClient
 import sys
 
-# ================================
-# ⚙️ CONFIG
-# ================================
-URL = "https://www.mena-atms.com/report/print.out/print.excel/type/vehicle.daily.transaction"
 
-MONGO_URI = "mongodb+srv://adminbew:K879w5XpBm3QL046@mn-mongodb-ops-2c8032e6.mongo.ondigitalocean.com/terminus?authSource=admin"
-
-DB_NAME = "atms"
-COLLECTION_NAME = "vehicle_daily"
-
-PHPSESSID = "p8hfl9pthhqirp08jm0khmituj"
 
 
 # ================================
@@ -68,7 +58,7 @@ def run():
         URL,
         headers=headers,
         data=data,
-        verify=certifi.where(),
+        verify=False,
         stream=True
     )
 
