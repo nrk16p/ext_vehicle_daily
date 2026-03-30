@@ -10,7 +10,10 @@ import sys
 # ⚙️ CONFIG
 # ================================
 
+import os
 
+MONGO_URI = os.getenv("MONGO_URI")
+PHPSESSID = os.getenv("PHPSESSID")
 DB_NAME = "atms"
 COLLECTION_NAME = "vehicle_daily"
 
