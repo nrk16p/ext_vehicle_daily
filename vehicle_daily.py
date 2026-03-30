@@ -6,7 +6,15 @@ import certifi
 from pymongo import MongoClient
 import sys
 
+# ================================
+# ⚙️ CONFIG
+# ================================
 
+
+DB_NAME = "atms"
+COLLECTION_NAME = "vehicle_daily"
+
+PHPSESSID = "p8hfl9pthhqirp08jm0khmituj"
 
 
 # ================================
