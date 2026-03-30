@@ -16,7 +16,7 @@ COLLECTION_NAME = "vehicle_daily"
 
 PHPSESSID = "p8hfl9pthhqirp08jm0khmituj"
 
-
+URL = "https://www.mena-atms.com/report/print.out/print.excel/type/vehicle.daily.transaction"
 # ================================
 # 🧠 FUNCTION: GET LAST WORKING DAY
 # ================================
