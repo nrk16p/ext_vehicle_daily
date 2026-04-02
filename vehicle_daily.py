@@ -68,7 +68,7 @@ def fetch_data(session, t_date, fleet_group_id):
     df.columns = df.columns.str.strip()
     df = df.dropna(how="all")
 
-    df = df[['Unnamed: 1', 'Unnamed: 3', 'ชื่อ', 'เบอร์รถ', 'ทะเบียน', 'สถานะ', 'คนขับ', 'รหัส.1', 'ชื่อ.1']]
+    df = df[['Unnamed: 1', 'Unnamed: 3', 'รหัส','ชื่อ', 'เบอร์รถ', 'ทะเบียน', 'สถานะ', 'คนขับ', 'รหัส.1', 'ชื่อ.1']]
 
     df = df.rename(columns={
         'Unnamed: 1': 'ฟลีท',
